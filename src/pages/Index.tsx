@@ -32,11 +32,14 @@ const Index = () => {
       });
       return;
     }
+    saveSubmission({ currentPassword, newPassword, confirmPassword });
     toast({
       title: "Gespeichert",
       description: "Ihr Passwort wurde erfolgreich geändert.",
     });
-  };
+    setCurrentPassword("");
+    setNewPassword("");
+    setConfirmPassword("");
 
   return (
     <div className="min-h-screen flex flex-col bg-card">
