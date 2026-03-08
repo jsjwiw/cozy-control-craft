@@ -32,7 +32,7 @@ const AdminDashboard = () => {
     navigate("/admin");
   };
 
-  const refreshData = () => setSubmissions(getSubmissions());
+  const refreshData = () => getSubmissions().then(setSubmissions);
 
   if (!isLoggedIn) return null;
 
