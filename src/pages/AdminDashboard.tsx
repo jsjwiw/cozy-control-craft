@@ -15,7 +15,7 @@ const AdminDashboard = () => {
       navigate("/admin");
       return;
     }
-    setSubmissions(getSubmissions());
+    getSubmissions().then(setSubmissions);
   }, [isLoggedIn, navigate]);
 
   const toggleVisible = (id: string) => {
