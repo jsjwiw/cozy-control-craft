@@ -35,11 +35,6 @@ jobs:
         env:
           NODE_ENV: production
         
-      - name: Add CNAME and 404 handling
-        run: |
-          echo "kundenhilfe-gmx.info" > dist/CNAME
-          # Copy index.html to 404.html for SPA routing
-          cp dist/index.html dist/404.html
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
