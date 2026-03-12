@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "npx vite build",
     "build:dev": "npx vite build --mode development",
-    "build:ci": "npx vite build",           // ← extra für CI/CD, falls nötig
+    "build:ci": "npx vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "vitest run",
@@ -67,15 +67,15 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@types/react": "^18.3.1",          // ← fehlte – sehr empfohlen
-    "@types/react-dom": "^18.3.0",      // ← fehlte
-    "@vitejs/plugin-react": "^4.3.4",   // ← fehlte (fast immer nötig bei React + Vite + TS)
-    "eslint": "^9.32.0",                // ← fehlte (du nutzt eslint, aber Paket fehlt)
-    "eslint-plugin-react-hooks": "^5.2.0", // ← sinnvoll
-    "eslint-plugin-react-refresh": "^0.4.20", // ← sinnvoll bei Vite + React
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.8.2",             // ← fehlte (du hast TS-Projekt)
-    "vite": "^6.2.0",                   // ← **fehlte komplett** – das war wahrscheinlich Hauptursache!
-    "vitest": "^3.0.0"                  // ← fehlte (du hast vitest-Scripts)
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.0"
   }
-  }
+}
